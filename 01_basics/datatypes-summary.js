@@ -40,3 +40,25 @@ console.log(typeof bigNumber);
 console.log(typeof heros);
 console.log(typeof myObj);
 console.log(typeof myFunction);
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack(Primitive)    Heap(Non Primitive)
+
+let ytname="rishabhdotcom"
+let anothername=ytname
+anothername="chaiaurcode"
+console.log(ytname);
+console.log(anothername);
+
+
+let userone={
+    email:"rishabh@google.com",
+    upi:"user@ybl"
+}
+
+let usertwo=userone
+usertwo.email="hitesh.com"
+console.log(userone.email);
+console.log(usertwo.email);
+
