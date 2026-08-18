@@ -58,3 +58,22 @@ const user=[
 console.log(user[1].email)
 
 console.log(tinderUser.hasOwnProperty('isLoggedIn'));
+
+
+
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+const course ={
+    coursename:"JS",
+    price:99,
+    courseInstructor:"Rishabh"
+}
+
+console.log(course.courseInstructor);
+
+const {courseInstructor:inst}=course
+
+console.log(inst);
+
+
