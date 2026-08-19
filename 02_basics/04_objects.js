@@ -77,11 +77,11 @@ const {courseInstructor:inst}=course
 console.log(inst);
 
 
-{
-    "name":"Rishabh",
-    "coursename":"Js",
-    "Price":"free"
-}
+// {
+//     "name":"Rishabh",
+//     "coursename":"Js",
+//     "Price":"free"
+// }
 
 [
     {}
