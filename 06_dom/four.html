@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chai aur Code | DOM </title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+</body>
+<script>
+    function addLan(langName){
+        const myEl=document.createElement('li');
+        myEl.innerHTML=`${langName}`
+        document.querySelector('.language').appendChild(myEl);
+    }
+    addLan("python")
+    addLan("typecript")
+
+    function addOptiLan(langName){
+        const Ele=document.createElement('li')
+        Ele.appendChild(document.createTextNode(langName))
+        document.querySelector(".language").appendChild(Ele);
+    }
+    addOptiLan("golan")
+    
+    //EDIT
+
+    const secLan=document.querySelector("li:nth-child(2)");
+    // secLan.innerHTML="mojo"
+    const newli=document.createElement('li')
+    newli.textContent="mojo"
+    secLan.replaceWith(newli)
+
+    const firstLan=document.querySelector("li:first-child")
+    firstLan.outerHTML="<li>TYpe</li>"
+
+
+    const lastLan=document.querySelector("li:last-child")
+    lastLan.remove();
+
+
+
+</script>
+</html>
