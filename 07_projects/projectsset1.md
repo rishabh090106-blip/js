@@ -221,8 +221,9 @@ function validateGuess(guess){
   }
   else{
     prevGuess.push(guess);
-    modify(guess);
+    
     if(numUsed==10){
+      modify(guess);
       displayMessage(`Game Over, Random Number was ${randomNumber}`)
       endGame();
     }
