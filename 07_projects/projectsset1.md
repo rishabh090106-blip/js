@@ -1,4 +1,4 @@
-# Projects related to DOM
+# Projects related to Dom
 
 ## Project Link
 
