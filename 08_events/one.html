@@ -20,13 +20,75 @@
 </body>
 <script>
     // document.getElementById('japan').onclick=function(){
-    //     alert("what you have done buddy")
+    //     alert("Japan Clicked")
     // }
 
-    document.getElementById('japan').addEventListener('click',function(e){
-        console.log("japan clicked");
-        alert("hey buddy")
+    // attachEvent()
+    // jQuery - on
+
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget,
+    // clientX, clientY, screenX, screenY
+    // altkey, ctrlkey, shiftkey, keyCode
+
+
+    // document.getElementById('japan').addEventListener('click',function(){
+    //     alert("Japan Clicked")
+    // },false)
+
+
+    // document.getElementById('japan').addEventListener('click',function(e){
+    //     console.log(e)
+    // },false)
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
         
+    // },false)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation();
+        
+    // },false)
+
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("clicked inside the ul");
+        
+    // },true)
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+        
+    // },true)
+
+
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     console.log("google clicked");
+    //     e.preventDefault();
+    // },false)
+
+
+
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log(e.target.parentNode);
+    //     let removeIt=e.target.parentNode
+    //     removeIt.remove();
+        
+    // },false)
+
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e.target.tagName);
+        if(e.target.tagName=='IMG'){
+            console.log(e.target.id);
+            
+            let removeIt=e.target.parentNode
+            removeIt.remove();
+        }   
     },false)
+
+    //removeIt.parentNode.removeChild(removeIt)
+
+
 </script>
 </html>
