@@ -7,7 +7,10 @@ console.log(prop);
 const chai={
     name:"ginger chai",
     price:250,
-    isAvailable:true
+    isAvailable:true,
+    orderChai: function(){
+        console.log("chai nhi bni");
+    }
 }
 chai.name="masala chai"
 console.log(chai);
@@ -22,7 +25,10 @@ console.log(Object.getOwnPropertyDescriptor(chai,"name"));
 chai.name="rishabh"
 console.log(chai);
 for(let [key,value] of Object.entries(chai)){
-    console.log(`${key}:${value}`);
+    if(typeof value!='function'){
+        console.log(`${key}:${value}`);
+    }
+    
     
 }
 
