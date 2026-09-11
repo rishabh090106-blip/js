@@ -54,3 +54,4 @@ const arrSix=[1,2,3,4,5]
 arrSix.push(Infinity)
 
 //for ,forEach, for-of
+//cfjgumb
